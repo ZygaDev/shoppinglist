@@ -21,6 +21,10 @@ export class App extends React.Component {
 			this.setState({
 				message: "Ten produkt znajduje się już na liście.",
 			});
+		} else if (newItem == " " || newItem == "") {
+			this.setState({
+				message: "Nie możesz dodać pustego produktu",
+			});
 		} else {
 			newItem !== "" &&
 				this.setState({
