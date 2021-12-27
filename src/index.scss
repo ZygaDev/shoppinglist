@@ -1,0 +1,63 @@
+@import url("https://www.lidl.pl/cdn/assets/6.7.1/LidlFontCondPro-Regular.woff2");
+@import "~bootstrap/scss/bootstrap";
+
+$white: #ffffff;
+$black: #353b42;
+$blue: #0050aa;
+$yellow: #fff000;
+$grey: #fafafa;
+
+html {
+	body {
+		color: $black;
+		font-family: LidlFontCondPro, "Trebuchet MS", sans-serif;
+		#shop {
+			height: 90vh;
+			background-color: $grey;
+			button.btn {
+				background-color: $blue;
+				border-color: $blue;
+				&:hover {
+					background-color: $yellow;
+					border-color: $yellow;
+					color: $black;
+				}
+			}
+
+			label {
+				font-size: 30px;
+				text-align: center;
+				width: 100%;
+			}
+			div.content {
+				background-color: $white;
+				margin-top: 25px;
+				padding: 15px;
+				border-radius: 8px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+				table.table {
+					table-layout: fixed;
+					tr {
+						th {
+							color: $blue;
+						}
+
+						td {
+							white-space: normal !important;
+							word-wrap: break-word;
+						}
+					}
+				}
+			}
+		}
+		footer {
+			height: 10vh;
+
+			img {
+				height: 40px;
+				width: auto;
+			}
+		}
+	}
+}
